@@ -22,7 +22,7 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return chansons.count
     }
  
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -30,7 +30,7 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func ajouterChanson(){
-        chansons = [chansons]()
+        chansons = [Chanson]()
         let diarabi = Chanson(artiste: "Kaaris", titre: "Diarabi", code: "qmUs-uiaRvw")
         chansons.append(diarabi)
         
@@ -40,7 +40,7 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
         let SuraYako = Chanson(artiste: "Sauti Sol", titre: "Sura Yako", code: "lEJw64Zl28U")
         chansons.append(SuraYako)
         
-        let iyanya = Chanson(artiste: "Iyanya", titre: "Kwa Ukwu", code: String"Giz00iJwsQA")
+        let iyanya = Chanson(artiste: "Iyanya", titre: "Kwa Ukwu", code: "Giz00iJwsQA")
         chansons.append(iyanya)
         
         let ada = Chanson(artiste: "Ada", titre: "I overcame", code: "e-CWacgnOEM")
@@ -49,8 +49,8 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
         let  tango = Chanson(artiste: "Moise Mbiye", titre: "Tango Naye", code: "cTJYVsBcPXo")
         chansons.append(tango)
         
-        let X-Maleya = Chanson(artiste: "X Maleya", titre: "Mon Ex", code: "hQvHYH_tXl8")
-        chansons.append(X-Maleya)
+        let maleya = Chanson(artiste: "X Maleya", titre: "Mon Ex", code: "hQvHYH_tXl8")
+        chansons.append(maleya)
         
         let Ponce = Chanson(artiste: "Lady Ponce", titre: "Secouer-secouer", code: "WDddz-3jIFY")
         chansons.append(Ponce)
